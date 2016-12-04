@@ -1,0 +1,5 @@
+issues:
+
+1, tool can't found the MKRCVCDSER.exe after recovery. It maybe some difference between preload system & recovery system.
+
+try to use another api?
