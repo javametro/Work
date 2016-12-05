@@ -3,3 +3,7 @@ issues:
 1, tool can't found the MKRCVCDSER.exe after recovery. It maybe some difference between preload system & recovery system.
 
 try to use another api?
+
+2, Lucky found that 64GB above usb can't made ok.
+	-- the reason was the services poped up a message box, so it can not interact with user.
+	-- blocked the tool.
