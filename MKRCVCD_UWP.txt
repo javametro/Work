@@ -7,5 +7,9 @@ try to use another api?
 2, Lucky found that 64GB above usb can't made ok.
 	-- the reason was the services poped up a message box, so it can not interact with user.
 	-- blocked the tool.
+	-- solved at L6AAL61510 (mkrcvd dp) module
 	
 3, L6AAL71410 (mkrcvcd uwp) can't pinned to StartMenu. Roll back to L6AAL71310 for Lucky & maisy. 
+	-- L6AAL71310 preload ok to mkrcvcd, but it need update progressbar at tool start step.
+	
+4, partition tool appx can't start after cbd recovery.(Aqua Core preload)
