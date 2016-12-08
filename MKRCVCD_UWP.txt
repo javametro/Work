@@ -1,6 +1,7 @@
 issues:
 
 1, tool can't found the MKRCVCDSER.exe after recovery. It maybe some difference between preload system & recovery system.
+	--> solved at L6AAL71512(MKRCVCD-UWP)
 
 try to use another api?
 
@@ -11,5 +12,6 @@ try to use another api?
 	
 3, L6AAL71410 (mkrcvcd uwp) can't pinned to StartMenu. Roll back to L6AAL71310 for Lucky & maisy. 
 	-- L6AAL71310 preload ok to mkrcvcd, but it need update progressbar at tool start step.
+	--> solved at L6AAL71512(MKRCVCD-UWP)
 	
 4, partition tool appx can't start after cbd recovery.(Aqua Core preload)
