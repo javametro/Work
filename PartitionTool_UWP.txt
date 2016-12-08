@@ -1,0 +1,1 @@
+1, partition tool recovery after can't found executable file.
