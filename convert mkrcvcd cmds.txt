@@ -1,0 +1,1 @@
+.\DesktopAppConverter.ps1 -Installer "C:\Users\preload\Desktop\InstallPackage\mkrcvcd\setup.exe" -InstallerArguments "/S" -Destination "C:\Users\preload\Desktop\output-package\mkrcvd" -PackageName "MKRCVCD" -Publisher "CN=abc" -Version 1.2.0.0 -MakeAppx -Verbose
