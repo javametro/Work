@@ -1,0 +1,244 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Japanese resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)\r\n"
+    "LANGUAGE 17, 1\r\n"
+    "#pragma code_page(932)\r\n"
+    "#include ""res\\MakeRecoveryDisc.rc2""  // Microsoft Visual C++ ?E?O?A?O?W?3?e?????\\?[?X\r\n"
+    "#include ""l.JPN\\afxres.rc""     // ?W???R?“?|?[?l?“?g\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAKERECOVERYDISC_DIALOG DIALOGEX 0, 0, 354, 273
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "再セットアップメディア作成ツール"
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    DEFPUSHBUTTON   "次へ",ID_NEXT,232,250,50,16
+    PUSHBUTTON      "終了",IDCANCEL,297,250,50,16
+    PUSHBUTTON      "戻る",ID_BACK,7,250,50,16
+END
+
+IDD_INIT DIALOGEX 0, 0, 354, 249
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "操作ガイド",IDC_STATIC,7,7,340,181
+    LTEXT           "再セットアップメディアを作成します。",IDC_COMMENT,14,21,325,21
+    LTEXT           "",IDC_ADVISE2,14,216,326,19
+    CONTROL         "",IDC_PROGRESS3,"msctls_progress32",PBS_MARQUEE | WS_BORDER,7,221,340,17
+END
+
+IDD_SELECT_NUM_DLG DIALOGEX 0, 0, 354, 249
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "操作ガイド",IDC_STATIC,7,7,340,181
+    GROUPBOX        "アドバイス",IDC_STATIC,7,200,340,42
+    LTEXT           "作成を開始するディスクを設定します。\n初めての場合は [再セットアップディスク (1枚目)] を選択してください。\n途中から作成する場合は、作成を開始するディスクを選択してください。",IDC_GUIDE1,14,21,325,26
+    COMBOBOX        IDC_CMBDISCNUM,88,57,161,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "作成開始ディスク：",IDC_DISCNUM,20,59,65,11
+    LTEXT           "次に、書き込み速度を選択してください。",IDC_STATIC,14,83,304,12
+    LTEXT           "＜注意＞\n　起動中のアプリをすべて終了してください。また、ユーザーの切り替えなどの操作はおこなわないでください。",IDC_STATIC,15,156,313,28
+    RTEXT           "書き込みドライブ：",IDC_STATIC,20,100,65,11
+    LTEXT           "(ドライブ名)",IDC_DRIVE2,88,100,210,11
+    RTEXT           "書き込み速度：",IDC_STATIC,20,117,65,11
+    COMBOBOX        IDC_CMBSPEED,88,115,45,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "設定内容を確認して [次へ] をクリックしてください。",IDC_STATIC,14,137,304,11
+    LTEXT           "",IDC_ADVISE2,14,216,326,19
+END
+
+IDD_MAKE_DISC_DLG DIALOGEX 0, 0, 354, 245
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "操作ガイド",IDC_STATIC,7,7,340,151
+    GROUPBOX        "アドバイス",IDC_GBOX,7,166,340,42
+    LTEXT           "再セットアップディスクを作成します。\n\n未使用の DVD-R を DVD ドライブに挿入して\nドディスクが認識されるまで10秒程度待ってから [作成開始] をクリックしてください。\n再セットアップディスクの作成を中止する場合は、[キャンセル] をクリックしてください。",IDC_GUIDE1,14,21,325,45
+    LTEXT           "＜注意＞\n　起動中のアプリをすべて終了してください。また、ユーザーの切り替えなどの操作はおこなわないでください。",IDC_CAUTION,15,123,313,28
+    RTEXT           "書き込みドライブ：",IDC_DRIVE1,20,77,65,11
+    LTEXT           "(ドライブ名)",IDC_DRIVE2,88,77,210,11
+    RTEXT           "書き込み速度：",IDC_SPEED1,20,94,65,11
+    COMBOBOX        IDC_CMBSPEED,88,92,45,12,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",PBS_SMOOTH | WS_BORDER,7,221,340,17
+    LTEXT           "",IDC_ADVISE2,14,182,326,16
+    LTEXT           "※書き込み速度を変更できます。",IDC_SPEED2,143,93,125,10
+    CONTROL         "",IDC_PROGRESS2,"msctls_progress32",PBS_MARQUEE | WS_BORDER,7,221,340,17
+END
+
+IDD_MAKE_DISC_DLG_USB DIALOGEX 0, 0, 354, 245
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "操作ガイド",IDC_STATIC,7,7,340,151
+    LTEXT           "再セットアップメディアを作成します。",IDC_GUIDE1,15,16,325,65
+    LTEXT           "＜注意＞\n1．USBメモリーを使用する場合には、16GBまたは32GBのUSBメモリーを準備してください。\n2．ドライブのすべてのデータは削除されます。このドライブに個人ファイルが含まれている場合は、バックアップしているか確認してください。",IDC_CAUTION,14,114,313,34
+    LTEXT           "USBフラッシュドライブの選択",IDC_GUIDE2,15,46,83,14
+    GROUPBOX        "ステータス",IDC_STATIC,7,159,340,35
+    CONTROL         "",IDC_PROGRESS2,"msctls_progress32", WS_BORDER,7,203,340,17
+    CONTROL         "",IDC_TREE3,"SysTreeView32",TVS_HASLINES | TVS_SHOWSELALWAYS | TVS_TRACKSELECT | WS_HSCROLL | WS_TABSTOP,28,60,135,39
+    LTEXT           "",IDC_ADVISE2,14,171,326,16
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32", PBS_MARQUEE | WS_BORDER,7,203,340,17
+END
+
+IDD_MAKE_DISC_DLG_USB_DONE DIALOGEX 0, 0, 354, 227
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "操作ガイド",IDC_STATIC,7,7,340,151
+    LTEXT           "",IDC_GUIDE1,15,16,325,15
+    LTEXT           "",IDC_CAUTION,15,25,313,79
+    GROUPBOX        "ステータス",IDC_STATIC,7,159,340,35
+    LTEXT           "",IDC_ADVISE2,14,171,326,16
+END
+
+IDD_SELECT_DISC_DLG DIALOGEX 0, 0, 354, 249
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD
+FONT 12, "MS UI Gothic", 400, 0, 0x80
+BEGIN
+    GROUPBOX        "操作ガイド",IDC_STATIC,7,7,340,181
+    GROUPBOX        "アドバイス",IDC_STATIC,7,200,340,42
+    LTEXT           "再セットアップメディアを作成します。",IDC_GUIDE1,14,21,325,21
+    LTEXT           "お持ちのメディアの種類を選択して ［次へ］ をクリックしてください。",IDC_STATIC,14,44,304,12
+    CONTROL         "USBメモリー",IDC_RADIO0,"Button",BS_AUTORADIOBUTTON | WS_GROUP,34,63,63,10
+    CONTROL         "DVD-R ディスク",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,34,79,63,10
+    CONTROL         "DVD-R 二層 ディスク",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,34,95,77,10
+    CONTROL         "Blu-ray ディスク",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,34,111,56,10
+    CONTROL         "Blu-ray 二層 ディスク",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,34,127,73,10
+    LTEXT           "",IDC_ADVISE2,14,216,326,19
+    LTEXT           "＜注意＞\n　起動中のアプリをすべて終了してください。また、ユーザーの切り替えなどの操作はおこなわないでください。",IDC_STATIC,15,146,313,28
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,3,0
+ PRODUCTVERSION 1,6,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041103a4"
+        BEGIN
+            VALUE "CompanyName", "NEC Personal Computers, Ltd."
+            VALUE "FileDescription", "再セットアップメディア作成ツール"
+            VALUE "FileVersion", "1.6.3.0"
+            VALUE "InternalName", "mkrcvcd.exe"
+            VALUE "LegalCopyright", "Copyright (C)  NEC Personal Computers, Ltd. 2003-2016"
+            VALUE "OriginalFilename", "mkrcvcd.exe"
+            VALUE "ProductName", "再セットアップメディア作成ツール"
+            VALUE "ProductVersion", "1.6.3.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 932
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\mkrcvcd.ico"
+#endif    // Japanese resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+LANGUAGE 17, 1
+#pragma code_page(932)
+#include "res\MakeRecoveryDisc.rc2"  // Microsoft Visual C++ ?E?O?A?O?W?3?e?????\?[?X
+#include "l.JPN\afxres.rc"     // ?W???R?“?|?[?l?“?g
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
