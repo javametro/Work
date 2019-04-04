@@ -1,2 +1,0 @@
-powershell C:\Users\preload\Desktop\DesktopAppConverter\DesktopAppConverter.ps1 -Installer "C:\Users\preload\Desktop\InstallPackage\mkrcvcd\setup.exe" -InstallerArguments "/S" -Destination "C:\Users\preload\Desktop\output-package\mkrcvcd" -PackageName "MKRCVCD" -Publisher "CN=3A1EEF91-768B-45AE-94B9-802CA8F4D301" -Version 1.6.3.0 -MakeAppx -Verbose
-pause
